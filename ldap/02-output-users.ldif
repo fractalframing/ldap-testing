@@ -6797,3 +6797,27 @@ dn: cn=Sales Engagement Management,ou=groups,dc=contoso,dc=com
 changetype: modify
 add: uniqueMember
 uniqueMember: cn=Chris Johnson [SALES],ou=users,dc=contoso,dc=com
+
+dn: cn=Dan Estudiante,ou=users,dc=contoso,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+uid: 181450
+uidNumber: 70544
+gidNumber: 70545
+homeDirectory: /home/danstudent
+givenName: Dan
+sn: Student
+displayName: Dan Student
+cn: Dan Student
+mail: danstudent@contoso.com
+telephoneNumber: (425) 555-0179
+title: Student
+userPassword: {SHA}RKkNn7+KoG94IN3x/B2jnm/4DS0=
+
+dn: cn=Alumnos,ou=groups,dc=contoso,dc=com
+changetype: modify
+add: uniqueMember
+uniqueMember: cn=Dan Estudiante,ou=users,dc=contoso,dc=com

@@ -3,10 +3,15 @@ services:
   ldap:
     container_name: contosoOpenLdap
     image: osixia/openldap:latest
-    ports: 
+    ports:
       - "389:389"
       - "636:636"
     env_file:
       - ./ldap.env
     volumes:
       - ./ldap:/data/ldif
+      - utags:/var/lib/ldap
+      - ldap:/etc/ldap/slapd.d
+volumes:
+  utags:
+  ldap:

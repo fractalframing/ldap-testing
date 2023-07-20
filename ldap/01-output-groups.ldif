@@ -100,3 +100,9 @@ objectClass: groupOfUniqueNames
 cn: CVP of IT
 uniqueMember: cn=CVP of IT,ou=groups,dc=contoso,dc=com
 description: CVP of IT
+
+dn: cn=Alumnos,ou=groups,dc=contoso,dc=com
+objectclass: groupOfUniqueNames
+cn: Alumnos
+uniqueMember: cn=Alumnos,ou=groups,dc=contoso,dc=com
+description: All students
